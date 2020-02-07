@@ -50,7 +50,7 @@
 			  </button>
 			  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 				<a class="dropdown-item" ng-repeat="r in data.foreignKeys.users track by $index"  href="" 
-				ng-click="data.single.user_id = r.id; data.single.user = r">{{r.username}}</a>
+				ng-click="data.single.user_id = r.id; data.single.user = r" ng-if="r.role=='user'">{{r.username}}</a>
 			  </div>
 			</div>			
 		</div>
