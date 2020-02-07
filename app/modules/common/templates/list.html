@@ -10,7 +10,7 @@
 <section class="wide-card">
     <div class="card">
     	<div class="card-header"><span class="large">MANAGE {{getTitle('list')}}</span>
-	    	<div class="float-right">
+	    	<div class="float-right" ng-if="currentUser.role=='user'">
             	<a href="{{newRouteHref}}">
 	                <button type="button" class="btn btn-dark btn-sm">
 	                    {{M.TITLE_ADD_PREFIX}}
